@@ -223,4 +223,4 @@ if ($mysqlerror = mysqli_error($db)) {
 $json['group'] = 0; /// Legacy
 
 echo json_encode($json);
-?>>
+?>
