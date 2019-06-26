@@ -101,7 +101,7 @@ if (strlen($time) == 13) {
 # Handle optional fields
 if (isset($_POST['comment'])) {
   $comment = removeEmoji(mysqli_real_escape_string($db, $_POST['comment']));
-  $comment = substr($comment, 0, 50); # Max 50 char
+  $comment = substr($comment, 0, 50); # Max 50 char
 } else {
   $comment = Null;
 }
@@ -223,4 +223,4 @@ if ($mysqlerror = mysqli_error($db)) {
 $json['group'] = 0; /// Legacy
 
 echo json_encode($json);
-?>
+?>>
